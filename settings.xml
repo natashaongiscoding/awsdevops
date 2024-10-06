@@ -1,0 +1,31 @@
+<settings>
+<servers>
+  <server>
+    <id>nextwork-nextwork-packages2</id>
+    <username>aws</username>
+    <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
+  </server>
+</servers>
+<profiles>
+  <profile>
+    <id>nextwork-nextwork-packages2</id>
+    <activation>
+      <activeByDefault>true</activeByDefault>
+    </activation>
+    <repositories>
+      <repository>
+        <id>nextwork-nextwork-packages2</id>
+        <url>https://nextwork-471112976395.d.codeartifact.us-west-2.amazonaws.com/maven/nextwork-packages2/</url>
+      </repository>
+    </repositories>
+  </profile>
+</profiles>
+<mirrors>
+  <mirror>
+    <id>nextwork-nextwork-packages2</id>
+    <name>nextwork-nextwork-packages2</name>
+    <url>https://nextwork-471112976395.d.codeartifact.us-west-2.amazonaws.com/maven/nextwork-packages2/</url>
+    <mirrorOf>*</mirrorOf>
+  </mirror>
+</mirrors>
+</settings>
